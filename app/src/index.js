@@ -1,6 +1,7 @@
 try {
     var lastLine = require('./last-line');
     var sortExcel = require('./sort-excel');
+    var path = require('path');
     var spawn = require('child_process').spawn;
 
     $(function () {
@@ -90,9 +91,9 @@ try {
                 log("已经完成排序，耗时" + ((+new Date() - start) / 1000) + "秒。");
                 $sortBtn.removeClass('disabled');
 
-                setTimeout(function(){
-                    if (window.confirm('已经完成排序。是否立即打开排序好的文件？')){
-                        spawn('explorer', [outputFilePath]);
+                setTimeout(function () {
+                    if (window.confirm('已经完成排序。是否立即打开排序好的文件？')) {
+                        spawn(path.sep === '/' ? 'open' : 'explorer', [outputFilePath]);
                     }
                 });
             } catch (e) {
