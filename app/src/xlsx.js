@@ -16,7 +16,6 @@ xlsx.writeFile = function(workbook, fileName, options){
         var data = xlsx.write(workbook, _.extend(options || {}, {type: 'buffer'}));
         return fs.writeFileSync(fileName, data);
     } catch (e){
-        alert(typeof e + ': ' + e + ": " + JSON.stringify(dir(e)));
         throw e;
     }
 };
