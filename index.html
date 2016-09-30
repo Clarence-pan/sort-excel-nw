@@ -93,10 +93,15 @@
         }
 
     </style>
-
-
     <script src="app/lib/jquery.min.js"></script>
-    <script src="app/index.js"></script>
+    <script src="app/lib/xlsx.core.min.js"></script>
+    <script>
+        var fs = require('fs');
+        var path = require('path');
+        var child_process = require('child_process');
+        var xlsx = require('xlsx');
+    </script>
+    <script src="app/packed/index.js"></script>
 </head>
 <body>
 <div id="main">

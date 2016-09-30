@@ -19,7 +19,6 @@
     "lodash": "^4.16.2",
     "xlsx": "^0.8.0"
   },
-//  "chromium-args": "--enable-logging=stderr",
   "window": {
     "resizable": true,
     "width": 530,

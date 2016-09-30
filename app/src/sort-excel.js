@@ -1,6 +1,5 @@
 var path = require('path');
-var promisify = require('es6-promisify');
-var xlsx = require('xlsx');
+var xlsx = require('./xlsx');
 var _ = require('lodash');
 
 /**

@@ -1,6 +1,6 @@
 try {
-    var lastLine = require('./app/last-line');
-    var sortExcel = require('./app/sort-excel');
+    var lastLine = require('./last-line');
+    var sortExcel = require('./sort-excel');
     var spawn = require('child_process').spawn;
 
     $(function () {
@@ -96,6 +96,7 @@ try {
                     }
                 });
             } catch (e) {
+                $sortBtn.removeClass('disabled');
                 if (e.$el) {
                     e.$el.focus();
                     log(e.message);
