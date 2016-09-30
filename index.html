@@ -96,10 +96,19 @@
     <script src="app/lib/jquery.min.js"></script>
     <script src="app/lib/xlsx.core.min.js"></script>
     <script>
-        var fs = require('fs');
-        var path = require('path');
-        var child_process = require('child_process');
-        var xlsx = require('xlsx');
+        if (typeof XLSX === 'undefined'){
+            alert("Error: Cannot load xlsx!");
+        } else {
+            window.xlsx = XLSX;
+        }
+
+        if (typeof require === 'undefined'){
+            alert("Error: no require is valid!");
+        } else {
+            window.fs = require('fs');
+            window.path = require('path');
+            window.child_process = require('child_process');
+        }
     </script>
     <script src="app/packed/index.js"></script>
 </head>
