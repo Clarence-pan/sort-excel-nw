@@ -1,0 +1,31 @@
+{
+  "name": "sort-excel",
+  "version": "1.0.0",
+  "description": "一个定制的excel排序工具",
+  "main": "index.html",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Clarence-pan/sort-excel.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Clarence-pan/sort-excel/issues"
+  },
+  "homepage": "https://github.com/Clarence-pan/sort-excel#readme",
+  "dependencies": {
+    "es6-promisify": "^5.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.2.2",
+    "jquery": "^3.1.1",
+    "lodash": "^4.16.2",
+    "xlsx": "^0.8.0"
+  },
+//  "chromium-args": "--enable-logging=stderr",
+  "window": {
+    "resizable": true,
+    "width": 530,
+    "height": 219
+  }
+}
